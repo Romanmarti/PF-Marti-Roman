@@ -1,0 +1,199 @@
+@font-face {
+  font-family:"ubuntu";
+  src: url(../assets/letra/Ubuntu-BoldItalic.ttf)
+}
+
+/*
+Selectores por etiqueta
+*/
+main{
+  background-color: rgb(236, 220, 220);
+}
+
+header {
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 100;
+  height: 106px;
+
+}
+body{
+  margin: 0%;
+  background-color: rgba(255, 255, 255, 0.157)
+}
+textarea{
+  display: block;
+  height: 200px;
+  width: 500px;
+  border: 1px solid #050505 ;
+}
+ img{
+  width: 100%;
+ }
+
+/*
+Selectores por id
+*/
+/*Pagina Inicio*/
+.videoIntro{
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+
+.menuDesplegable ul{
+  display:flex;
+  justify-content: center;
+}
+.menuDesplegable ul a {
+  display: block;
+  color:#050505;
+  text-decoration:none;
+  font-weight:600;
+  padding: 40px;
+  font-size:20px;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  
+}
+.menuDesplegable ul li {
+  position:relative ;  
+  padding:0;
+  list-style-type: none;  
+  background-color: #f0ebe49a;
+  z-index: 1;
+
+ }
+ .menuDesplegable ul li:hover {
+  background: #ffffff2a;
+  display: block;
+
+ }
+
+ .menuDesplegable ul ul {
+  display:none;
+  position:absolute; 
+  padding:0;
+ }
+
+ 
+ 
+ .menuDesplegable ul ul li {
+  float:none;
+
+ }
+ 
+ 
+ .menuDesplegable ul ul a {
+  padding:15px 25px;
+ }
+
+ 
+ .menuDesplegable ul li:hover > ul {
+  display:block;
+ }
+
+/*
+Selectores por clase
+*/
+/*Pagina Inicio*/
+.imagenlogo{
+  width: 110px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+/*Pagina Productos*/
+
+.containerItems{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 200px;
+  column-gap: 80px;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+.fotoProd1{
+  border-radius: 10px;
+  height: 350px;
+}
+.tituloPages{
+  margin: 0;
+  padding: 300px 0px 0px 0px;
+  color: #000000;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+.productosOferta{
+  padding: 250px;
+}
+.productosOferta h1{
+  color: #000000;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+/*Pagina Buzos y Remeras*/
+
+
+/*Pagina pantalones*/
+
+
+footer{
+  background-color: #ffffff;
+
+}
+.footerText{
+  list-style-type: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+
+}
+.navFooter{
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+}
+.navFooter a{
+  list-style-type: none;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #050505;
+  padding: 6px;
+  font-size: 15px;
+}
+.formContactotext{
+  padding: 250px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.campo{
+  display: block;
+  width: 300px;
+  height: 30px;
+  border: 1px solid #000000;
+  margin-bottom: 20px;
+}
+.botonenviar{
+  height: 30px;
+  width: 80px;
+  background-color: rgb(231, 227, 227);
+}
+
+.griditem{
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+}
+.mensajeInicio{
+  text-align: center;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+}
