@@ -6,6 +6,7 @@
 /*
 Selectores por etiqueta
 */
+
 main{
   background-color: rgb(236, 220, 220);
 }
@@ -108,36 +109,46 @@ Selectores por clase
 }
 
 /*Pagina Productos*/
-
-.containerItems{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 200px;
-  column-gap: 80px;
-  margin-top: 200px;
-  margin-left: 50px;
+.containerArticulos {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
 }
-.fotoProd1{
-  border-radius: 10px;
-  height: 350px;
+.seccionArticulos {
+  display: flex;
+  flex-wrap: nowrap; /* Cambia a wrap si quieres que las imágenes se ajusten en múltiples filas */
+  gap: 20px;
+  justify-content: space-between; /* Ajusta el espaciado entre los artículos */
+  align-items: flex-start;
+  padding: 200px;
 }
-.tituloPages{
+.articuloItem {
+  max-width: 24%; /* Ajusta el tamaño máximo de cada artículo */
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.articuloItem img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.articuloItem h3 {
   margin: 0;
-  padding: 300px 0px 0px 0px;
-  color: #000000;
+  padding: 10px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
+  font-size: 1.2em;
+  background-color: #f4f4f4;
 }
-.productosOferta{
-  padding: 250px;
-}
-.productosOferta h1{
-  color: #000000;
+.articuloItem p {
+  padding: 0 10px 10px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
+
 }
+
 /*Pagina Buzos y Remeras*/
 
 
@@ -169,6 +180,16 @@ footer{
   padding: 6px;
   font-size: 15px;
 }
+.formularioContact{
+  display: flex;
+  justify-content: center;
+}
+.formContactotext h2{
+  text-align: center;
+}
+.formContactotext p{
+  text-align: center;
+}
 .formContactotext{
   padding: 250px;
   font-size: 25px;
@@ -187,13 +208,3 @@ footer{
   background-color: rgb(231, 227, 227);
 }
 
-.griditem{
-  width: 100px;
-  height: 100px;
-  background-color: brown;
-}
-.mensajeInicio{
-  text-align: center;
-  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  
-}
