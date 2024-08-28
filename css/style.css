@@ -8,9 +8,9 @@ Selectores por etiqueta
 */
 
 main{
-  background-color: rgb(236, 220, 220);
+  background-color: #00000028;
   z-index: 1;
-  height: 3000px;
+  height: 2500px;
 }
 
 header {
@@ -22,7 +22,7 @@ header {
 }
 body{
   margin: 0%;
-  background-color: rgba(255, 255, 255, 0.157);
+  background-color: #7a6949 ;
   
 }
 textarea{
@@ -31,9 +31,6 @@ textarea{
   width: 500px;
   border: 1px solid #050505 ;
 }
- img{
-  width: 100%;
- }
 
 /*
 Selectores por id
@@ -43,84 +40,28 @@ Selectores por id
   z-index: 1;
   width: 100%;
   margin-bottom: -5px;
+  border: solid 1px;
 
 }
 
-
-.menuDesplegable ul{
-  display:flex;
-  justify-content: center;
+nav{
+  height: 100px;
+  font-size: 20px;
+  padding: 0%;
 }
-.menuDesplegable ul a {
-  display: block;
-  color:#050505;
-  text-decoration:none;
-  font-weight:600;
-  padding: 40px;
-  font-size:20px;
-  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform:uppercase;
-  letter-spacing:1px;
-  
-}
-.menuDesplegable ul li {
-  position:relative ;  
-  padding:0;
-  list-style-type: none;  
-  background-color: #f0ebe49a;
-  z-index: 2;
-
- }
- .menuDesplegable ul li:hover {
-  background: #ffffff2a;
-  display: block;
-
- }
-
- .menuDesplegable ul ul {
-  display:none;
-  position:absolute; 
-  padding:0;
- }
-
- 
- 
- .menuDesplegable ul ul li {
-  float:none;
-
- }
- 
- 
- .menuDesplegable ul ul a {
-  padding:15px 25px;
- }
-
- 
- .menuDesplegable ul li:hover > ul {
-  display:block;
- }
-
 /*
 Selectores por clase
 */
 /*Pagina Inicio*/
-.imagenlogo{
-  width: 110px;
-  margin-top: -10px;
-  margin-left: -10px;
-}
+
 
 /*Pagina Productos*/
-.seccionArticulosPadre{
-  padding-top: 300px;
-}
-
 .containerArticulos {
   width: 90%;
   overflow: hidden;
 }
 .seccionArticulos {
-  bottom: 200px;
+
   display: flex;
   flex-wrap: nowrap; /* Cambia a wrap si quieres que las imágenes se ajusten en múltiples filas */
   gap: 10px;
@@ -159,18 +100,19 @@ Selectores por clase
 
 
 /*Pagina pantalones*/
-
+.navBottom{
+  height: 180px;
+}
 
 footer{
   background-color: #ffffff;
 }
-.footerText{
+
+.footerText {
   list-style-type: none;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
   letter-spacing: 1px;
-
+  font-size: 2px;
 }
 .navFooter{
   list-style-type: none;
@@ -182,7 +124,7 @@ footer{
   font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #050505;
-  padding: 6px;
+  padding: 5px;
   font-size: 15px;
 }
 .formularioContact{
@@ -208,8 +150,8 @@ footer{
   margin-bottom: 20px;
 }
 .botonenviar{
-  height: 30px;
-  width: 80px;
+  height: 40px;
+  width: 90px;
   background-color: rgb(231, 227, 227);
 }
 /* Estilo del carrusel para que esté encima del video */
