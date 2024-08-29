@@ -14,14 +14,13 @@ html {
 }
 
 main{
-  background-color: #ead1cb;
+  background-color: rgba(179, 172, 172, 0.582);
   z-index: 1;
   height: auto;
   object-fit: cover; /* Ajusta el video para cubrir el área del contenedor */
   margin-top: 0px; /* Margin top to avoid overlap with fixed header */
   
 }
-
 
 header {
   background-color: #cbe4ea;
@@ -35,16 +34,9 @@ body{
   background-color: #cbe4ea ;
   
 }
-textarea{
-  display: block;
-  height: 200px;
-  width: 500px;
-  border: 1px solid #050505 ;
-}
 
-/*
-Selectores por id
-*/
+
+
 /*Pagina Inicio*/
 #fondo{
   z-index: 1;
@@ -62,13 +54,9 @@ nav{
   font-size: 20px;
   padding: 0%;
 }
-/*
-Selectores por clase
-*/
-/*Pagina Inicio*/
 
 
-/*Pagina Productos*/
+/*container articulos*/
 .containerArticulos {
   width: 100%;
   overflow: hidden;
@@ -108,10 +96,11 @@ Selectores por clase
 
 }
 
-/*Pagina Buzos y Remeras*/
 
 
-/*Pagina pantalones*/
+
+/*footer*/
+
 .navBottom{
   height: 180px;
 }
@@ -139,6 +128,7 @@ footer{
   padding: 5px;
   font-size: 15px;
 }
+/* formulario */
 .formularioContact{
   display: flex;
   justify-content: center;
@@ -166,17 +156,31 @@ footer{
   width: 90px;
   background-color: rgb(231, 227, 227);
 }
+textarea{
+  display: block;
+  height: 200px;
+  width: 500px;
+  border: 1px solid #050505 ;
+}
 
+/* carousel*/
+.row h1{
+  text-align: center;
+}
+.row h2{
+  text-align: center;
+}
 .carousel-container {
   top:0;
   width: auto;
   padding: 15px 10px;
+  
 }
 
 #carouselExampleFade {
   width: 33%;
   height: auto;
-  overflow: hidden; /* Evita el scroll horizontal */
+  overflow: hidden; 
 }
 
 .carousel-inner {
@@ -187,26 +191,27 @@ footer{
 }
 
 .carousel-item {
-  width: 100%; /* Asegura que cada ítem ocupe el 100% del contenedor */
+  width: 100%;
 }
 
 .carousel-item img {
-  width: 100%; /* Hace que la imagen ocupe el ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
 }
 
-/* Control de carrusel */
+
 .carousel-control-prev, 
 .carousel-control-next {
-  width: 5%; /* Ajusta el tamaño de los controles */
+  width: 5%; 
 }
 
 .carousel-control-prev-icon, 
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo de los controles */
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 
+/* menu de navegación*/
 
 .navbar {
   font-size: 1rem;
@@ -220,7 +225,6 @@ footer{
   border: none;
 }
 
-/* Navbar Collapse */
 .navbar-collapse {
   flex-grow: 1;
   z-index: 1050;
@@ -237,8 +241,8 @@ footer{
   padding: 0.5rem 1rem;
 }
 .navbar-nav .dropdown-menu {
-  background-color: #cbe4ea; /* Fondo igual al header */
-  box-shadow: none; /* Opcional: Elimina la sombra del dropdown */
+  background-color: #cbe4ea; 
+  box-shadow: none; 
   padding-top:10px;
 
 }
@@ -251,17 +255,97 @@ footer{
 
 
 /* Media Queries */
+@media (max-width: 992px) {
+  .navbar {
+    font-size: 0.9rem;
+  }
+
+  .navbar-collapse {
+    background-color: #cbe4ea; 
+  }
+
+  .videoIntro {
+    max-height: 300px;
+    z-index: 1;
+  }
+
+  .formularioContact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .campo, .botonenviar {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
-  /* Estilos para pantallas pequeñas */
+  .navbar {
+    font-size: 0.85rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem;
+  }
+
+  .formContactotext {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .formularioContact {
+    padding: 0.5rem;
+  }
+
+  .campo, .botonenviar {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footerText {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    font-size: 0.8rem;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .formContactotext {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .footerText {
+    font-size: 0.7rem;
+  }
+
+  .botonenviar {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
   
   .navbar {
     font-size: 0.9rem;
   }
   .navbar-collapse {
-    background-color: #cbe4ea; /* Fondo del menú en dispositivos móviles */
+    background-color: #cbe4ea; 
   }
   .navbar-nav .dropdown-menu {
-    z-index: 1050; /* Asegura que el dropdown esté por encima de otros elementos */
+    z-index: 1050; 
   }
 
   .videoIntro {
@@ -283,17 +367,16 @@ footer{
     list-style-type: none;
   }
   .carousel-inner img {
-    height: auto; /* Ajusta la altura para pantallas más pequeñas */;
+    height: auto; 
   }
 
   .articuloItem img {
-    height: auto; /* Ajusta la altura para pantallas más pequeñas */
+    height: auto; 
     width: auto;
   }
 }
 
 @media (max-width: 576px) {
-  /* Estilos para pantallas muy pequeñas */
 
   .navbar {
     font-size: 0.8rem;
@@ -325,14 +408,14 @@ footer{
     list-style-type: none;
   }
   .carousel-inner img {
-    height: auto; /* Ajusta la altura para pantallas muy pequeñas */
+    height: auto; 
     
   }
 
   .articuloItem img {
-    height: auto; /* Ajusta la altura para pantallas muy pequeñas */
+    height: auto; 
   }
 }
-/* Ajustes para pantallas más pequeñas */
+
 
 
