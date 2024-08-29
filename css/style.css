@@ -3,24 +3,31 @@
   src: url(../assets/letra/Ubuntu-BoldItalic.ttf)
 }
 
-html{
-  height: 100%;
-}
+
 /*
 Selectores por etiqueta
 */
+html {
+  height: auto;
+  overflow-x: hidden; /* Evita el scroll horizontal globalmente */
+  background-color:#cbe4ea ;
+}
 
 main{
   background-color: #ead1cb;
   z-index: 1;
-  height: 2500px;
+  height: auto;
+  object-fit: cover; /* Ajusta el video para cubrir el área del contenedor */
+  margin-top: 0px; /* Margin top to avoid overlap with fixed header */
+  
 }
+
 
 header {
   background-color: #cbe4ea;
   width: 100%;
-  z-index: 100;
-  height: 106px;
+  z-index: 1000;
+  height: 100px;
 
 }
 body{
@@ -39,11 +46,15 @@ textarea{
 Selectores por id
 */
 /*Pagina Inicio*/
+#fondo{
+  z-index: 1;
+}
 .videoIntro{
   z-index: 1;
   width: 100%;
   margin-bottom: -5px;
   border: solid 1px;
+  object-fit: cover; /* Ajusta el video para cubrir el área del contenedor */
 }
 
 nav{
@@ -59,23 +70,22 @@ Selectores por clase
 
 /*Pagina Productos*/
 .containerArticulos {
-  width: 90%;
+  width: 100%;
   overflow: hidden;
 }
 .seccionArticulos {
-
   display: flex;
   flex-wrap: nowrap; 
-  gap: 10px;
+  gap: 20px;
   justify-content: space-between; 
   align-items: flex-start;
-  padding: 200px;
+  padding-bottom: 200px;
 }
 .articuloItem {
   max-width: 24%; 
   box-sizing: border-box;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -157,29 +167,172 @@ footer{
   background-color: rgb(231, 227, 227);
 }
 
+.carousel-container {
+  top:0;
+  width: auto;
+  padding: 15px 10px;
+}
+
 #carouselExampleFade {
-  width: 720px;
-  height: 1040px;
-  top: 0px;
-  border: solid;
+  width: 33%;
+  height: auto;
+  overflow: hidden; /* Evita el scroll horizontal */
 }
 
 .carousel-inner {
-  height: 1045px;
-  margin: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.678);
 }
 
-
-
-.carousel-control-prev {
-  margin-left: -45px; 
-  
+.carousel-item {
+  width: 100%; /* Asegura que cada ítem ocupe el 100% del contenedor */
 }
 
+.carousel-item img {
+  width: 100%; /* Hace que la imagen ocupe el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+}
+
+/* Control de carrusel */
+.carousel-control-prev, 
 .carousel-control-next {
-  margin-right: -35px; 
+  width: 5%; /* Ajusta el tamaño de los controles */
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: rgb(0, 0, 0); 
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo de los controles */
 }
+
+
+.navbar {
+  font-size: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Navbar Collapse */
+.navbar-collapse {
+  flex-grow: 1;
+  z-index: 1050;
+  padding-top: 10px;
+
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+}
+.navbar-nav .dropdown-menu {
+  background-color: #cbe4ea; /* Fondo igual al header */
+  box-shadow: none; /* Opcional: Elimina la sombra del dropdown */
+  padding-top:10px;
+
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: #050505;
+  padding: 0.5rem 1rem;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Estilos para pantallas pequeñas */
+  
+  .navbar {
+    font-size: 0.9rem;
+  }
+  .navbar-collapse {
+    background-color: #cbe4ea; /* Fondo del menú en dispositivos móviles */
+  }
+  .navbar-nav .dropdown-menu {
+    z-index: 1050; /* Asegura que el dropdown esté por encima de otros elementos */
+  }
+
+  .videoIntro {
+    max-height: 300px;
+    z-index: 1;
+  }
+
+  #carousel-container {
+    height: auto;
+  }
+
+  .articuloItem {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  
+  .footerText {
+    font-size: 0.8rem;
+    list-style-type: none;
+  }
+  .carousel-inner img {
+    height: auto; /* Ajusta la altura para pantallas más pequeñas */;
+  }
+
+  .articuloItem img {
+    height: auto; /* Ajusta la altura para pantallas más pequeñas */
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Estilos para pantallas muy pequeñas */
+
+  .navbar {
+    font-size: 0.8rem;
+    z-index: 1050;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    font-size: 0.8rem;
+  }
+
+  .videoIntro {
+    max-height: 200px;
+  }
+
+  #carousel-container {
+    height: auto;
+  }
+
+  .articuloItem {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  
+  .footerText {
+    font-size: 0.7rem;
+    list-style-type: none;
+  }
+  .carousel-inner img {
+    height: auto; /* Ajusta la altura para pantallas muy pequeñas */
+    
+  }
+
+  .articuloItem img {
+    height: auto; /* Ajusta la altura para pantallas muy pequeñas */
+  }
+}
+/* Ajustes para pantallas más pequeñas */
+
+
