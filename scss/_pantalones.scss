@@ -1,0 +1,45 @@
+
+// Container articulos
+.containerArticulos {
+    width: 100%;
+    overflow: hidden;
+  
+    .seccionArticulos {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 200px;
+  
+      .articuloItem {
+        max-width: 24%;
+        box-sizing: border-box;
+        border: 1px solid $primary-border-color;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+  
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+  
+        h3 {
+          margin: 0;
+          padding: 10px;
+          text-align: center;
+          font-size: 1.2em;
+          background-color: #f4f4f4;
+        }
+  
+        p {
+          padding: 0 10px 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
