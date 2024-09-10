@@ -1,7 +1,3 @@
-@font-face {
-  font-family:"ubuntu";
-  src: url(../assets/letra/Ubuntu-BoldItalic.ttf)
-}
 
 
 /*
@@ -31,7 +27,7 @@ header {
 }
 body{
   margin: 0%;
-  background-color: #cbe4ea ;
+  background-color: #ebebeb ;
   
 }
 
