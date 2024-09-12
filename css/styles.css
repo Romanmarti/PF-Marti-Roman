@@ -1,6 +1,11 @@
 .navbar {
   font-size: 1rem;
 }
+.navbar .tituloNav {
+  color: rgb(0, 0, 0);
+  padding: 4px;
+  font-size: 50px;
+}
 .navbar .navbar-brand {
   font-size: 1.5rem;
 }
@@ -38,7 +43,7 @@ html {
 
 body {
   margin: 0%;
-  background-color: #ff0000;
+  background-color: #725555;
 }
 
 main {
@@ -47,7 +52,6 @@ main {
   height: auto;
   object-fit: cover;
   margin-top: 0;
-  padding: 0%;
 }
 
 header {
@@ -147,10 +151,6 @@ footer .navFooter a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.tituloNav {
-  color: rgb(255, 0, 0);
-}
-
 @media (max-width: 992px) {
   .navbar {
     font-size: 0.85rem;
@@ -237,7 +237,7 @@ footer .navFooter a {
   gap: 20px;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 200px;
+  padding-bottom: 60px;
 }
 .containerArticulos .seccionArticulos .articuloItem {
   max-width: 24%;
@@ -279,7 +279,7 @@ footer .navFooter a {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 10px;
+  padding-bottom: 60px;
 }
 .containerArticulos .seccionArticulos .articuloItem {
   max-width: 24%;
@@ -293,7 +293,6 @@ footer .navFooter a {
 .containerArticulos .seccionArticulos .articuloItem img {
   width: 100%;
   height: auto;
-  display: block;
 }
 .containerArticulos .seccionArticulos .articuloItem h3 {
   margin: 0;
@@ -307,6 +306,28 @@ footer .navFooter a {
   text-align: center;
 }
 
+.containerImg {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.containerImg .imagenCuotas {
+  width: 600px;
+  height: auto;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 .containerArticulos {
   width: 100%;
   overflow: hidden;
@@ -317,7 +338,7 @@ footer .navFooter a {
   gap: 20px;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 200px;
+  padding-bottom: 60px;
 }
 .containerArticulos .seccionArticulos .articuloItem {
   max-width: 24%;
