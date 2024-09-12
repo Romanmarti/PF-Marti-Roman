@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   font-size: 1rem;
 }
@@ -69,7 +74,6 @@ nav {
 
 footer {
   background-color: #cbe4ea;
-  width: 100%;
 }
 footer .navBottom {
   height: 180px;
@@ -159,14 +163,6 @@ footer .navFooter a {
     max-height: 300px;
     z-index: 1;
   }
-  .formularioContact {
-    flex-direction: column;
-    align-items: center;
-  }
-  .campo,
-  .botonenviar {
-    width: 100%;
-  }
 }
 @media (max-width: 768px) {
   .navbar {
@@ -177,18 +173,6 @@ footer .navFooter a {
   }
   .navbar-nav .nav-link {
     padding: 0.5rem;
-  }
-  .formContactotext {
-    padding: 1rem;
-    font-size: 1.2rem;
-  }
-  .formularioContact {
-    padding: 0.5rem;
-  }
-  .campo,
-  .botonenviar {
-    max-width: 100%;
-    width: 100%;
   }
   .footerText {
     font-size: 0.8rem;
@@ -227,6 +211,100 @@ footer .navFooter a {
     width: 100%;
   }
 }
+@media (max-width: 992px) {
+  .containerArticulos .seccionArticulos {
+    flex-wrap: wrap;
+  }
+  .containerArticulos .seccionArticulos .articuloItem {
+    flex: 1 1 48%;
+    margin-bottom: 20px;
+  }
+  .containerImg .imagenCuotas {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .containerArticulos .seccionArticulos .articuloItem {
+    flex: 1 1 100%;
+  }
+  .containerImg .imagenCuotas {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .containerArticulos .seccionArticulos .articuloItem {
+    flex: 1 1 100%;
+  }
+  .containerImg .imagenCuotas {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .containerArticulos .seccionArticulos {
+    flex-wrap: wrap;
+  }
+  .containerArticulos .seccionArticulos .articuloItem {
+    flex: 1 1 48%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .containerArticulos .seccionArticulos .articuloItem {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 576px) {
+  .containerArticulos .seccionArticulos .articuloItem {
+    flex: 1 1 100%;
+  }
+}
+@media (min-width: 992px) {
+  .formularioContact {
+    flex-direction: column;
+  }
+  .formularioContact .formContactotext {
+    padding: 50px;
+    font-size: 28px;
+  }
+  .formularioContact .campo,
+  .formularioContact textarea {
+    max-width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .formularioContact {
+    flex-direction: column;
+  }
+  .formularioContact .formContactotext {
+    padding: 40px;
+    font-size: 26px;
+  }
+  .formularioContact .campo,
+  .formularioContact textarea {
+    max-width: 70%;
+  }
+}
+@media (min-width: 576px) {
+  .formularioContact {
+    flex-direction: column;
+  }
+  .formularioContact .formContactotext {
+    padding: 30px;
+    font-size: 24px;
+  }
+  .formularioContact .campo,
+  .formularioContact textarea {
+    max-width: 80%;
+  }
+}
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
 .containerArticulos {
   width: 100%;
   overflow: hidden;
@@ -328,6 +406,11 @@ footer .navFooter a {
   }
 }
 
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
 .containerArticulos {
   width: 100%;
   overflow: hidden;
@@ -369,33 +452,32 @@ footer .navFooter a {
 .formularioContact {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
 }
-.formularioContact .formContactotext {
-  padding: 250px;
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.formularioContact .formContactotext h2,
-.formularioContact .formContactotext p {
-  text-align: center;
+.formularioContact .campo,
+.formularioContact textarea {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 .formularioContact .campo {
-  display: block;
-  width: 300px;
   height: 30px;
   border: 1px solid #000;
-  margin-bottom: 20px;
-}
-.formularioContact .botonenviar {
-  height: 40px;
-  width: 90px;
-  background-color: rgb(231, 227, 227);
 }
 .formularioContact textarea {
-  display: block;
   height: 200px;
-  width: 500px;
   border: 1px solid #050505;
+}
+.formularioContact .botonenviar {
+  width: auto;
+  background-color: rgb(248, 248, 248);
+  border: none;
+  box-sizing: border-box;
+  padding: 10px 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
