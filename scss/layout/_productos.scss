@@ -1,0 +1,71 @@
+
+// Container articulos
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.containerArticulos {
+    width: 100%;
+    overflow: hidden;
+    .seccionArticulos {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 60px;
+
+      .articuloItem {
+        max-width: 24%;
+        box-sizing: border-box;
+        border: 1px solid $primary-border-color;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+  
+        h3 {
+          margin: 0;
+          padding: 10px;
+          text-align: center;
+          font-size: 1.2em;
+          background-color: #f4f4f4;
+        }
+  
+        p {
+          padding: 0 10px 10px;
+          text-align: center;
+        }
+
+      }
+    }
+  }
+  .containerImg {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  
+    .imagenCuotas {
+      width: 600px; // Ajusta el tamaño de la imagen según sea necesario
+      height: auto;
+      animation: bounce 2s infinite; // Añade la animación de rebote
+
+    }
+  
+    // Definición de la animación
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+  }
