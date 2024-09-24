@@ -71,94 +71,17 @@
       width: 100%;
     }
   }
-  // Media Queries para dispositivos móviles
-  @media (max-width: 992px) {
-    .containerArticulos {
-      .seccionArticulos {
-        flex-wrap: wrap; // Permite que los artículos se ajusten en varias líneas
-  
-        .articuloItem {
-          flex: 1 1 48%; // Ajusta el tamaño para tablets y pantallas más pequeñas
-          margin-bottom: 20px; // Espacio entre artículos
-        }
-      }
-    }
-  
-    .containerImg {
-      .imagenCuotas {
-        width: 100%; // Ajusta el tamaño de la imagen para pantallas más pequeñas
-        max-width: 400px; // Limita el tamaño máximo
-      }
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .containerArticulos {
-      .seccionArticulos {
-        .articuloItem {
-          flex: 1 1 100%; // Cada artículo ocupa el 100% del ancho disponible
-        }
-      }
-    }
-  
-    .containerImg {
-      .imagenCuotas {
-        width: 100%; // Ajusta el tamaño de la imagen para pantallas aún más pequeñas
-        max-width: 300px; // Limita el tamaño máximo
-      }
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .containerArticulos {
-      .seccionArticulos {
-        .articuloItem {
-          flex: 1 1 100%; // Cada artículo ocupa el 100% del ancho disponible
-        }
-      }
-    }
-  
-    .containerImg {
-      .imagenCuotas {
-        width: 100%; // Ajusta el tamaño de la imagen para pantallas pequeñas
-        max-width: 200px; // Limita el tamaño máximo
-      }
-    }
-  }
 
 
-  @media (max-width: 992px) {
-    .containerArticulos {
-      .seccionArticulos {
-        flex-wrap: wrap; // Permite que los artículos se ajusten en múltiples líneas
-  
-        .articuloItem {
-          flex: 1 1 48%; // Ajusta el tamaño para pantallas medianas (tablets)
-          margin-bottom: 20px; // Espacio entre artículos
-        }
+    /* Adjust width for two articles per row */
+    @media (min-width: 768px) {
+      .articuloItem {
+        width: 50%; /* Adjust for spacing and responsiveness */
       }
     }
-  }
-  
-  @media (max-width: 768px) {
-    .containerArticulos {
-      .seccionArticulos {
-        .articuloItem {
-          flex: 1 1 100%; // Cada artículo ocupa el 100% del ancho disponible
-        }
-      }
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .containerArticulos {
-      .seccionArticulos {
-        .articuloItem {
-          flex: 1 1 100%; // Cada artículo ocupa el 100% del ancho disponible
-        }
-      }
-    }
-  }
+
+
+
   @media (min-width: 992px) {
     .formularioContact {
       flex-direction: column; // Cambia la dirección del flex a columna para dispositivos móviles

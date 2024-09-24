@@ -2,31 +2,28 @@
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
-  .containerArticulos {
+.containerArticulos {
     width: 100%;
     overflow: hidden;
-  
     .seccionArticulos {
       display: flex;
-      flex-wrap: nowrap;
-      gap: 20px;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
       padding-bottom: 60px;
-  
+
       .articuloItem {
-        max-width: 24%;
         box-sizing: border-box;
-        border: 1px solid $primary-border-color;
+        border: 1px solid $primary-border-color; // Asegúrate de definir $primary-border-color
         border-radius: 5px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         background-color: #fff;
-  
+        margin-bottom: 20px; // Espacio entre artículos
+
         img {
           width: 100%;
           height: auto;
-          display: block;
         }
   
         h3 {
@@ -41,7 +38,7 @@
           padding: 0 10px 10px;
           text-align: center;
         }
+
       }
     }
   }
-  
